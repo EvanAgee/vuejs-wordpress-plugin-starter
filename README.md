@@ -16,3 +16,5 @@
   `npm run build` when you're ready to deploy the plugin.
 - Note `templates/admin/index.php` is the base PHP template for the plugin settings UI. It has an element `<div id="vwp-plugin"></div>` where the Vue app is getting mounted.
 - The provided Vue template can be found in `src/vue/App.vue`.
+- Activate the plugin in WordPress
+- Get to work!
