@@ -1,10 +1,5 @@
 <?php
 /**
- *
- * @link              vuewp.com
- * @since             1.0.0
- * @package           Vwp_Plugin
- *
  * @wordpress-plugin
  * Plugin Name:       Vue WordPress
  * Plugin URI:        http://vuewp.com
@@ -44,8 +39,8 @@ class VwpPlugin
   }
 
   function enqueue_assets() {
-    wp_enqueue_style( 'vwp-plugin-css', plugins_url('/public/styles.css', __FILE__) );
-    wp_enqueue_script( 'vwp-plugin-js', plugins_url('/public/scripts.js', __FILE__), null, null, true );
+    wp_enqueue_style( "$this->plugin-css", plugins_url('/public/styles.css', __FILE__) );
+    wp_enqueue_script( "$this->plugin-js", plugins_url('/public/scripts.js', __FILE__), null, null, true );
   }
 
   public function add_admin_page() {

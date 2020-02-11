@@ -1,7 +1,7 @@
 const BrowserSync = require('browser-sync-webpack-plugin');
 
 module.exports = new BrowserSync({
-  files: ['*.php', 'inc/*.php', 'template-parts/*.php', 'dist'],
+  files: ['*.php', 'inc/*.php', 'templates/**/*.php', 'public'],
   notify: {
     styles: {
       top: 'auto',
